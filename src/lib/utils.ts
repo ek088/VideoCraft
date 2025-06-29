@@ -18,5 +18,5 @@ export function getVideoUrl(filePath: string): string {
   
   const relativePath = filePath.substring(storageIndex);
   // The backend seems to serve from a /static route mapping to the storage directory
-  return `${API_BASE_URL}/static/${relativePath.substring(storageKeyword.length)}`;
+  return `${API_BASE_URL}/${relativePath.substring(storageKeyword.length)}`;
 }
