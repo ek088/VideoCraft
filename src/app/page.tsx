@@ -1,3 +1,9 @@
+import { VideoDashboard } from '@/components/video-dashboard';
+
 export default function Home() {
-  return <></>;
+  return (
+    <main>
+      <VideoDashboard />
+    </main>
+  );
 }
